@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&family=Nunito+Sans:wght@300;600;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: hsl(223, 87%, 63%);
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+  --gray: hsl(0, 0%, 59%);
+  --very-dark-blue: hsl(209, 33%, 12%);
+}
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 17px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem 0;
+}
+
+header img {
+  margin-bottom: 3rem;
+}
+
+header h1 {
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+}
+
+header h1 span {
+  color: var(--gray);
+  opacity: 0.8;
+}
+
+header form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 4rem;
+}
+
+header form input {
+  width: 100%;
+  padding: 1.5rem;
+  border: 1px solid var(--gray);
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  border-radius: 2.5rem;
+  font-size: 1rem;
+  margin-bottom: 3rem
+}
+
+header form input:focus {
+  outline: none;
+  border: 1px solid var(--blue);
+}
+
+header form span {
+  color: var(--light-red);
+  font-size: .8rem;
+  position: absolute;
+  margin-bottom: 1.5rem;
+}
+
+header form button {
+  width: 100%;
+  padding: 1.5rem;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  border-radius: 2.5rem;
+  font-size: 1rem;
+  background-color: var(--blue);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+header form button:hover {
+  background-color: transparent;
+  color: var(--blue);
+  border: 1px solid var(--blue);
+  transition: all .2s ease-in-out;
+}
+
+section img {
+  width: 100%;
+  max-width: 500px;
+
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7rem;
+  margin-bottom: 2rem;
+}
+
+footer .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+footer .icons ion-icon {
+  color: var(--very-dark-blue);
+  font-size: 1.5rem;
+  fill: var(--blue);
+  cursor: pointer;
+}
+
+footer .icons ion-icon:hover {
+  background-color: var(--blue);
+  padding: .2rem;
+  fill: white;
+  border-radius: 50%;
+  transition: all .2s ease-in-out;
+}
+
+footer p {
+  color: var(--gray);
+  opacity: 0.8;
+  font-size: .8rem;
+}
+
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  header form {
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  header form input {
+    padding: 1.5rem;
+  }
+
+  header form button {
+    margin-bottom: 3rem;
+    width: 15rem;
+    margin-left: .5rem;
+    padding: 1.5rem;
+  }
+
+  header form span {
+    position: absolute;
+    bottom: -0.6rem;
+    right: 14rem;
+    font-size: .9rem;
+  }
+
+  footer .icons ion-icon {
+    font-size: 2rem;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
+}
